@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,119 @@
 <body>
   <div class="crt-overlay"></div>
 
-  <div id="desktop">
+  <div id="logon-screen">
+    <div class="logon-window">
+      <div class="window-header">
+        <div class="window-title">
+          <span class="win-icon">⚡</span> Logon to MASTERPOS Workstation
+        </div>
+      </div>
+      <div class="logon-content">
+        <div class="logon-banner">
+          <svg class="logon-pyramids" viewBox="0 0 100 85">
+            <defs>
+              <linearGradient id="lGold1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff5c0"/>
+                <stop offset="50%" stop-color="#b8933b"/>
+                <stop offset="100%" stop-color="#543e11"/>
+              </linearGradient>
+              <linearGradient id="lGold2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#a6812e"/>
+                <stop offset="60%" stop-color="#574013"/>
+                <stop offset="100%" stop-color="#241904"/>
+              </linearGradient>
+            </defs>
+            <polygon points="50,5 30,40 50,40" fill="url(#lGold1)" />
+            <polygon points="50,5 70,40 50,40" fill="url(#lGold2)" />
+            <polygon points="28,45 8,80 28,80" fill="url(#lGold1)" />
+            <polygon points="28,45 48,80 28,80" fill="url(#lGold2)" />
+            <polygon points="72,45 52,80 72,80" fill="url(#lGold1)" />
+            <polygon points="72,45 92,80 72,80" fill="url(#lGold2)" />
+          </svg>
+          <div class="logon-banner-titles">
+            <div class="logon-banner-brand">MASTERPOS</div>
+            <div class="logon-banner-sub">Workstation v2.40 [UNIX-Like Browser OS]</div>
+          </div>
+        </div>
+
+        <div class="logon-notice">
+          You about to login as 'Guest', note that any data created here are never leave your pc, everything is local except /filesystem which loads from server.
+        </div>
+
+        <div class="logon-form">
+          <div class="logon-row">
+            <label class="logon-label" for="logon-user">User name:</label>
+            <input type="text" id="logon-user" class="logon-input" value="Guest" readonly>
+          </div>
+          <div class="logon-row">
+            <label class="logon-label" for="logon-pass">Password:</label>
+            <input type="password" id="logon-pass" class="logon-input" placeholder="(No password required)" autofocus>
+          </div>
+        </div>
+
+        <div class="logon-footer">
+          <button id="logon-btn" class="gold-btn logon-action-btn">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="desktop" style="display: none;">
     <div id="icon-grid"></div>
     <div id="window-space"></div>
+
+    <div id="desktop-context-menu" class="context-menu" style="display: none;">
+      <div class="ctx-item" id="ctx-refresh">
+        <span class="ctx-icon">⟳</span>
+        <span>Refresh</span>
+      </div>
+      <div class="ctx-divider"></div>
+      <div class="ctx-item ctx-submenu-parent">
+        <span class="ctx-icon">➕</span>
+        <span>New</span>
+        <span class="ctx-arrow">▸</span>
+        <div class="ctx-submenu">
+          <div class="ctx-item" id="ctx-new-folder">
+            <span class="ctx-icon">📁</span>
+            <span>Folder</span>
+          </div>
+          <div class="ctx-item" id="ctx-new-file">
+            <span class="ctx-icon">📄</span>
+            <span>Text Document</span>
+          </div>
+        </div>
+      </div>
+      <div class="ctx-divider"></div>
+      <div class="ctx-item" id="ctx-open-exp">
+        <span class="ctx-icon">🗂️</span>
+        <span>File Explorer</span>
+      </div>
+      <div class="ctx-item" id="ctx-open-np">
+        <span class="ctx-icon">📝</span>
+        <span>Notepad</span>
+      </div>
+    </div>
+
+    <div id="icon-context-menu" class="context-menu" style="display: none;">
+      <div class="ctx-item" id="icon-ctx-open">
+        <span class="ctx-icon">⚡</span>
+        <span>Open</span>
+      </div>
+      <div class="ctx-divider"></div>
+      <div class="ctx-item" id="icon-ctx-rename">
+        <span class="ctx-icon">✏️</span>
+        <span>Rename</span>
+      </div>
+      <div class="ctx-item" id="icon-ctx-delete">
+        <span class="ctx-icon">🗑️</span>
+        <span>Delete</span>
+      </div>
+    </div>
 
     <div id="start-menu" style="display: none;">
       <div class="start-header">
         <div class="start-avatar">❖</div>
-        <div class="start-username">lohrrrr</div>
+        <div class="start-username">guest</div>
       </div>
 
       <div class="start-body">
@@ -31,8 +136,8 @@
           <div class="start-item" id="start-term-btn">
             <span class="start-item-icon">📟</span>
             <div class="start-item-details">
-              <span class="start-item-title">Terminal Emulator</span>
-              <span class="start-item-desc">Run scripts and tools</span>
+              <span class="start-item-title">Terminal (cmd)</span>
+              <span class="start-item-desc">UNIX Shell</span>
             </div>
           </div>
         </div>
@@ -40,22 +145,22 @@
 
       <div class="start-footer">
         <button class="start-foot-btn" id="start-shutdown-btn">
-          <span class="foot-icon">🛑</span> Выключение
+          <span class="foot-icon">🛑</span> Shut Down
         </button>
       </div>
     </div>
   </div>
 
-  <div id="taskbar">
+  <div id="taskbar" style="display: none;">
     <div id="start-btn">
       <span class="start-flag">❖</span>
-      <span class="start-txt">Пуск</span>
+      <span class="start-txt">Start</span>
     </div>
 
     <div class="task-buttons" id="task-buttons"></div>
 
     <div id="tray">
-      <div class="tray-icon" id="tray-volume" title="Volume: 40%">🔊 40%</div>
+      <div class="tray-icon" id="tray-volume" title="Volume: 100%">🔊 100%</div>
       <div class="tray-icon" title="Network LAN 100M">🖧 LAN</div>
       <div id="clock">00:00:00</div>
     </div>

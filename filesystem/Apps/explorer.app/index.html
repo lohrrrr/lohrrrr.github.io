@@ -1,23 +1,27 @@
 <div class="explorer-wrapper" id="exp-root">
   <div class="exp-toolbar">
     <div class="exp-nav-actions">
-      <button class="exp-btn" id="exp-btn-back" title="Назад">🠔</button>
-      <button class="exp-btn" id="exp-btn-up" title="Вверх">🠕</button>
-      <button class="exp-btn" id="exp-btn-refresh" title="Обновить">⟳</button>
+      <button class="exp-btn" id="exp-btn-back" title="Back">🠔</button>
+      <button class="exp-btn" id="exp-btn-up" title="Up">🠕</button>
+      <button class="exp-btn" id="exp-btn-refresh" title="Refresh">⟳</button>
     </div>
     <div class="exp-address-box">
-      <span class="exp-address-label">Адрес:</span>
+      <span class="exp-address-label">Address:</span>
       <input type="text" id="exp-address" spellcheck="false" autocomplete="off">
-      <button class="exp-btn" id="exp-btn-go">Перейти</button>
+      <button class="exp-btn" id="exp-btn-go">Go</button>
     </div>
   </div>
 
   <div class="exp-main">
     <div class="exp-sidebar">
-      <div class="exp-side-title">Точки входа</div>
+      <div class="exp-side-title">Places</div>
+      <div class="exp-side-link" data-target="/home/guest/Desktop">
+        <span class="exp-side-icon">🖥️</span>
+        <span>Desktop</span>
+      </div>
       <div class="exp-side-link" data-target="/home/guest">
         <span class="exp-side-icon">🏠</span>
-        <span>Домашняя (~/guest)</span>
+        <span>Home (~/guest)</span>
       </div>
       <div class="exp-side-link" data-target="/home/lohrrrr">
         <span class="exp-side-icon">👤</span>
@@ -25,15 +29,15 @@
       </div>
       <div class="exp-side-link" data-target="/filesystem/Apps">
         <span class="exp-side-icon">📦</span>
-        <span>Приложения (Apps)</span>
+        <span>Apps</span>
       </div>
       <div class="exp-side-link" data-target="/filesystem/bin">
         <span class="exp-side-icon">⚙️</span>
-        <span>Бинарники (/bin)</span>
+        <span>Binaries (/bin)</span>
       </div>
       <div class="exp-side-link" data-target="/">
         <span class="exp-side-icon">💾</span>
-        <span>Корень (/)</span>
+        <span>Root (/)</span>
       </div>
     </div>
 
@@ -42,9 +46,18 @@
     </div>
   </div>
 
+  <div class="exp-picker-bar" id="exp-picker-bar" style="display: none;">
+    <div class="exp-picker-row">
+      <span class="exp-picker-label">File name:</span>
+      <input type="text" id="exp-picker-name" class="exp-picker-input" spellcheck="false" autocomplete="off">
+      <button class="exp-btn" id="exp-picker-action-btn">Save</button>
+      <button class="exp-btn" id="exp-picker-cancel-btn">Cancel</button>
+    </div>
+  </div>
+
   <div class="exp-statusbar">
-    <span id="exp-status-count">0 объектов</span>
-    <span id="exp-status-perm">Права: Чтение</span>
+    <span id="exp-status-count">0 object(s)</span>
+    <span id="exp-status-perm">Permissions: Read-Only</span>
   </div>
 
   <div class="exp-viewer" id="exp-viewer" style="display: none;">
