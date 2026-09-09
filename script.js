@@ -560,7 +560,7 @@ window.Kernel = {
 
         document.getElementById('start-shutdown-btn').addEventListener('click', function() {
             if (confirm('Завершить работу терминала MASTERPOS?')) {
-                document.body.innerHTML = '<div style="background:#000;color:#dfc272;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:18px;text-align:center;padding:20px;">ТЕПЕРЬ ПИТАНИЕ КОМПЬЮТЕРА МОЖНО ВЫКЛЮЧИТЬ.<br><br><span style="font-size:12px;color:#857b59;">IT IS NOW SAFE TO TURN OFF YOUR COMPUTER.</span></div>';
+                document.body.innerHTML = '<div style="background:#000;color:#dfc272;height:100vh;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:18px;text-align:center;padding:20px;">ТЕПЕРЬ ПИТАНИЕ КОМПЬЮТЕРА МОЖНО ВЫКЛЮЧИТЬ.<br><br><span style="font-size:12px;color:#857b59;"></span></div>';
             }
         });
     }

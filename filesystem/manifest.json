@@ -14,7 +14,8 @@
     "/filesystem/Apps/posmaster.app",
     "/filesystem/Apps/projects.app",
     "/filesystem/Apps/terminal.app",
-    "/filesystem/bin"
+    "/filesystem/bin",
+    "/filesystem/share"
   ],
   "files": {
     "/etc/hostname": "masterpos-terminal-01",
@@ -64,6 +65,7 @@
     "/filesystem/bin/rm.js": "FILE_EXISTS",
     "/filesystem/bin/touch.js": "FILE_EXISTS",
     "/filesystem/bin/uname.js": "FILE_EXISTS",
-    "/filesystem/bin/whoami.js": "FILE_EXISTS"
+    "/filesystem/bin/whoami.js": "FILE_EXISTS",
+    "/filesystem/share/wallpaper.png": "FILE_EXISTS"
   }
 }

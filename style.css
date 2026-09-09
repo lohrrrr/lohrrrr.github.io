@@ -12,9 +12,7 @@ body {
     font-size: 11px;
     color: #dfd8be;
     background-color: #0b110c;
-    background-image:
-    linear-gradient(rgba(10, 16, 12, 0.72), rgba(6, 10, 7, 0.85)),
-    url('https://upload.wikimedia.org/wikipedia/commons/7/72/Frutiger_Aero_Composite.jpg');
+    background-image: url('/filesystem/share/wallpaper.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
