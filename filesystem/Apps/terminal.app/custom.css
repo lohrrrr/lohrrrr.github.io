@@ -1,0 +1,69 @@
+.window-content {
+    background: #020402 !important;
+}
+
+.term-window-content {
+    background: transparent !important;
+    color: #d4c89f;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    cursor: text;
+    padding: 8px 10px;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.term-banner {
+    color: #857b56;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+#app-term-output {
+white-space: pre-wrap;
+word-break: break-all;
+line-height: 1.3;
+}
+
+.term-entry {
+    margin-bottom: 4px;
+}
+
+.term-cmd-echo {
+    color: #fff4d1;
+}
+
+.term-result {
+    color: #cebf93;
+}
+
+.term-err {
+    color: #ff6868;
+}
+
+.term-input-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+#app-term-prompt {
+color: #79ad68;
+font-weight: bold;
+white-space: nowrap;
+}
+
+#app-term-input {
+flex: 1;
+background: transparent;
+border: none;
+outline: none;
+color: #ffffff;
+font-family: Consolas, "Courier New", monospace;
+font-size: 12px;
+caret-color: #eed588;
+}

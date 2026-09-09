@@ -10,195 +10,40 @@
   <div class="crt-overlay"></div>
 
   <div id="desktop">
+    <div id="icon-grid"></div>
+    <div id="window-space"></div>
 
-    <div class="window" id="win-bio" style="top: 25px; left: 30px; width: 460px;">
-      <div class="window-header">
-        <div class="window-title">
-          <span class="win-icon">⚡</span> SYS://ID_CARD.EXE - MASTERPOS GOLD
-        </div>
-        <div class="window-controls">
-          <button class="win-btn win-min" data-target="win-bio">_</button>
-          <button class="win-btn win-max" data-target="win-bio">□</button>
-          <button class="win-btn win-close" data-target="win-bio">✕</button>
+    <div id="start-menu" style="display: none;">
+      <div class="start-header">
+        <div class="start-avatar">❖</div>
+        <div class="start-username">lohrrrr</div>
+      </div>
+
+      <div class="start-body">
+        <div class="start-col start-col-left" id="start-app-list"></div>
+
+        <div class="start-col start-col-right">
+          <a href="https://github.com/lohrrrr" target="_blank" class="start-item-link">
+            <span class="start-item-icon">🐙</span>
+            <span class="start-item-title">GitHub Profile</span>
+          </a>
+          <div class="start-divider"></div>
+          <div class="start-item" id="start-term-btn">
+            <span class="start-item-icon">📟</span>
+            <div class="start-item-details">
+              <span class="start-item-title">Terminal Emulator</span>
+              <span class="start-item-desc">Run scripts and tools</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="window-content">
-        <div class="masterpos-logo-box">
-          <svg class="masterpos-pyramids" viewBox="0 0 100 85">
-            <defs>
-              <linearGradient id="goldGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#fff5c0"/>
-                <stop offset="50%" stop-color="#b8933b"/>
-                <stop offset="100%" stop-color="#543e11"/>
-              </linearGradient>
-              <linearGradient id="goldGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#a6812e"/>
-                <stop offset="60%" stop-color="#574013"/>
-                <stop offset="100%" stop-color="#241904"/>
-              </linearGradient>
-            </defs>
-            <polygon points="50,5 30,40 50,40" fill="url(#goldGrad1)" />
-            <polygon points="50,5 70,40 50,40" fill="url(#goldGrad2)" />
-            <polygon points="28,45 8,80 28,80" fill="url(#goldGrad1)" />
-            <polygon points="28,45 48,80 28,80" fill="url(#goldGrad2)" />
-            <polygon points="72,45 52,80 72,80" fill="url(#goldGrad1)" />
-            <polygon points="72,45 92,80 72,80" fill="url(#goldGrad2)" />
-          </svg>
-          <h1 class="masterpos-title">MASTERPOS</h1>
-          <div class="masterpos-sub">BOOTLEG EDITION v2.40 // TERMINAL ROOT</div>
-        </div>
 
-        <div class="panel-section">
-          <div class="terminal-kv"><span>USER:</span><strong>lohrrrr</strong></div>
-          <div class="terminal-kv"><span>STATUS:</span><strong>UNCOMPROMISING INDIE DEV</strong></div>
-          <div class="terminal-kv"><span>KERNEL:</span><strong>NTOSKRNL / VMLINUZ / DARWIN</strong></div>
-          <div class="terminal-kv"><span>HABITAT:</span><strong>Linux CLI, Windows 10 IoT LTSC, C/ASM/RUST</strong></div>
-        </div>
-
-        <div class="panel-text">
-          Добро пожаловать на мой персональный сайт. Каждая частичка этого сайта вдохновлена системами/программами которыми я пользовался в детстве. Начиная от моей первой ОС Windows 7 Домашняя и Sonic.exe с undertale по мой текущий домашний POS терминал на Windows XP.
-        </div>
-        <!-- В детстве у меня был старый 32х битный нетбук от HP на 2гига озу который мне отдала тётя. Тогда я и начал бороздить интернет, и обнаружил про такое явление как sonic.exe. Я безумно рад что тогда я узнал эту игру ибо впоследствии будучи в первом классе из-за неё я научился ставить apk и exe файлы что позволило мне скачать undertale и русификатор и даже успел поиграть с него в дельтарун. Но во время игры когда я дошел до Scarlet Forest и уменя полностью умер компьютер а точнее жесткий диск. По не знанию чем является ос я полез внутрь этого нетбука и пологаю это стало отправной точкой моих разбирательств в пк. Из-за этого я начал больше разбираться в железе но в разбираться в операционках я уже начал ближе к 2019 году когда мне эта-же тётя в связи со смертью нетбука притащила мне ноутбук списанный с нашего локального автовокзала. И там начались мои разбирательства... -->
-        <div class="retro-gifs-grid">
-          <div class="gif-cell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Tesseract.gif" alt="3D Tesseract">
-            <span>[TESSERACT.3D]</span>
-          </div>
-          <div class="gif-cell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Cube_Rotating.gif" alt="Rotating Cube">
-            <span>[GEOMETRY.RAW]</span>
-          </div>
-          <div class="gif-cell">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/3D-green-star-rotating.gif" alt="3D Star">
-            <span>[POLYGON.SYS]</span>
-          </div>
-        </div>
+      <div class="start-footer">
+        <button class="start-foot-btn" id="start-shutdown-btn">
+          <span class="foot-icon">🛑</span> Выключение
+        </button>
       </div>
     </div>
-
-    <div class="window" id="win-projects" style="top: 25px; left: 510px; width: 490px;">
-      <div class="window-header">
-        <div class="window-title">
-          <span class="win-icon">📁</span> EXP://DIRECTORY_PROJECTS.DIR
-        </div>
-        <div class="window-controls">
-          <button class="win-btn win-min" data-target="win-projects">_</button>
-          <button class="win-btn win-max" data-target="win-projects">□</button>
-          <button class="win-btn win-close" data-target="win-projects">✕</button>
-        </div>
-      </div>
-      <div class="window-content">
-        <div class="path-bar">
-          <span>Address:</span> <span class="path-input">C:\GITHUB\lohrrrr\REPOSITORIES\*.*</span>
-        </div>
-
-        <div class="file-list">
-          <div class="project-entry">
-            <div class="proj-header">
-              <span class="proj-tag">[DIR]</span>
-              <a href="https://github.com/lohrrrr/OpenWIKI" target="_blank" class="proj-title">OpenWIKI</a>
-            </div>
-            <div class="proj-desc">
-              Свободный автономный движок вики-документации без корпоративного мусора, бэкенд-перегрузок и раздутых зависимостей.
-            </div>
-            <div class="proj-link">
-              <a href="https://github.com/lohrrrr/OpenWIKI" target="_blank">&gt;&gt; git clone https://github.com/lohrrrr/OpenWIKI</a>
-            </div>
-          </div>
-
-          <div class="project-entry">
-            <div class="proj-header">
-              <span class="proj-tag">[DIR]</span>
-              <a href="https://github.com/lohrrrr/GybrlScript" target="_blank" class="proj-title">GybrlScript</a>
-            </div>
-            <div class="proj-desc">
-              Кастомный диалект и скриптовый интерпретатор с нелинейным синтаксисом, минимальным весом и нулевым внешним рантаймом.
-            </div>
-            <div class="proj-link">
-              <a href="https://github.com/lohrrrr/GybrlScript" target="_blank">&gt;&gt; git clone https://github.com/lohrrrr/GybrlScript</a>
-            </div>
-          </div>
-
-          <div class="project-entry">
-            <div class="proj-header">
-              <span class="proj-tag">[DIR]</span>
-              <a href="https://github.com/lohrrrr/TyProxy" target="_blank" class="proj-title">TyProxy</a>
-            </div>
-            <div class="proj-desc">
-              Легковесный сетевой туннель и прокси-роутер автономного сетевого стека для изоляции и чистого сокетного трафика.
-            </div>
-            <div class="proj-link">
-              <a href="https://github.com/lohrrrr/TyProxy" target="_blank">&gt;&gt; git clone https://github.com/lohrrrr/TyProxy</a>
-            </div>
-          </div>
-        </div>
-        <div class="status-strip">3 OBJECT(S) FOUND // SEC_LEVEL: 0 // READ_OK</div>
-      </div>
-    </div>
-
-    <div class="window" id="win-player" style="top: 410px; left: 30px; width: 460px;">
-      <div class="window-header">
-        <div class="window-title">
-          <span class="win-icon">🎵</span> SND://BYTEBEAT_GENERATOR.SYS
-        </div>
-        <div class="window-controls">
-          <button class="win-btn win-min" data-target="win-player">_</button>
-          <button class="win-btn win-max" data-target="win-player">□</button>
-          <button class="win-btn win-close" data-target="win-player">✕</button>
-        </div>
-      </div>
-      <div class="window-content">
-        <div class="track-meta">
-          <div><span class="lbl">TRACK:</span> <strong class="val">Sequen_0x6</strong></div>
-          <div><span class="lbl">AUTHOR:</span> <strong class="val">SamsaDev</strong></div>
-          <div><span class="lbl">MODE:</span> <span class="val">8000 Hz / Mono Math Stream / Gain: 40%</span></div>
-        </div>
-
-        <canvas id="scope" width="420" height="60"></canvas>
-
-        <div class="formula-box">
-          (((t*(t&gt;&gt;30|t&gt;&gt;13)/2)) &gt;&gt; (t*(t&gt;&gt;50|t&gt;&gt;10)&amp;7^t&gt;&gt;7|t&gt;&gt;82)) | (t&gt;&gt;4|t&gt;&gt;4) &gt;&gt; (t&amp;(t/0x6))
-        </div>
-
-        <div class="player-controls">
-          <button id="btn-play" class="gold-btn">EXECUTE [PLAY]</button>
-          <button id="btn-stop" class="gold-btn">HALT [STOP]</button>
-          <a href="https://dollchan.net/bytebeat/#4AAAA+kXT0NAo0dIosbMzNqgBkobGmvpGmpoKdnYKUHFTiLiBppp5HJBhDuJZgJTUKICkTUB8E6gGNY0SfYMKM01NAA." target="_blank" class="gold-btn-link">[DOLLCHAN LINK]</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="window" id="win-blinkies" style="top: 410px; left: 510px; width: 490px;">
-      <div class="window-header">
-        <div class="window-title">
-          <span class="win-icon">🌐</span> NET://BLINKIES_AND_STAMPS.DB
-        </div>
-        <div class="window-controls">
-          <button class="win-btn win-min" data-target="win-blinkies">_</button>
-          <button class="win-btn win-max" data-target="win-blinkies">□</button>
-          <button class="win-btn win-close" data-target="win-blinkies">✕</button>
-        </div>
-      </div>
-      <div class="window-content">
-        <div class="section-title">&gt; Websites</div>
-        <div class="blinkies-cluster">
-          <a href="https://frutigeraeroarchive.org/"><img src="https://frutigeraeroarchive.org/images/buttons/frutigeraeroarchive_button_2.png" alt="Frutiger Aero Archive"></a>
-          <a href="https://0of64.neocities.org"><img src="https://0of64.neocities.org/Images/0of64.gif" alt="0of64"></a>
-          <a href="https://zorrpu.com/" target="_blank"><img src="https://zorrpu.com/stamps-etc/link-me/Zorrpu-button-defaults.gif" alt="Zorrpu"></a>
-          <a href="https://knoxstation.neocities.org"><img src="https://knoxstation.neocities.org/images/knoxstation.gif" alt="Visit Knoxstation"></a>
-        </div>
-
-        <div class="section-title" style="margin-top: 14px;">&gt; Marks</div>
-        <div class="stamps-cluster">
-          <img src="https://zorrpu.com/stamps-etc/meow.png" alt="Stamp" class="stamp-img">
-          <img src="https://knoxstation.neocities.org/stamps/stamp(24).gif" alt="Stamp" class="stamp-img">
-          <img src="https://webgore.neocities.org/xbox360.jpg" alt="Stamp" class="stamp-img">
-          <img src="https://0of64.neocities.org/Images/aboutMeGraphics/aboutMe.gif" alt="Stamp" class="stamp-img">
-          <img src="https://knoxstation.neocities.org/stamps/stamp(17).png" alt="Stamp" class="stamp-img">
-        </div>
-      </div>
-    </div>
-
   </div>
 
   <div id="taskbar">
@@ -207,23 +52,10 @@
       <span class="start-txt">Пуск</span>
     </div>
 
-    <div class="task-buttons">
-      <button class="task-btn active" data-target="win-bio">
-        <span class="win-icon">⚡</span> ID_CARD.EXE
-      </button>
-      <button class="task-btn active" data-target="win-projects">
-        <span class="win-icon">📁</span> PROJECTS.DIR
-      </button>
-      <button class="task-btn active" data-target="win-player">
-        <span class="win-icon">🎵</span> Sequen_0x6.SYS
-      </button>
-      <button class="task-btn active" data-target="win-blinkies">
-        <span class="win-icon">🌐</span> BLINKIES.DB
-      </button>
-    </div>
+    <div class="task-buttons" id="task-buttons"></div>
 
     <div id="tray">
-      <div class="tray-icon" title="Bytebeat Stream Volume: 40%">🔊 40%</div>
+      <div class="tray-icon" id="tray-volume" title="Volume: 40%">🔊 40%</div>
       <div class="tray-icon" title="Network LAN 100M">🖧 LAN</div>
       <div id="clock">00:00:00</div>
     </div>

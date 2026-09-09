@@ -1,0 +1,57 @@
+<div class="explorer-wrapper" id="exp-root">
+  <div class="exp-toolbar">
+    <div class="exp-nav-actions">
+      <button class="exp-btn" id="exp-btn-back" title="Назад">🠔</button>
+      <button class="exp-btn" id="exp-btn-up" title="Вверх">🠕</button>
+      <button class="exp-btn" id="exp-btn-refresh" title="Обновить">⟳</button>
+    </div>
+    <div class="exp-address-box">
+      <span class="exp-address-label">Адрес:</span>
+      <input type="text" id="exp-address" spellcheck="false" autocomplete="off">
+      <button class="exp-btn" id="exp-btn-go">Перейти</button>
+    </div>
+  </div>
+
+  <div class="exp-main">
+    <div class="exp-sidebar">
+      <div class="exp-side-title">Точки входа</div>
+      <div class="exp-side-link" data-target="/home/guest">
+        <span class="exp-side-icon">🏠</span>
+        <span>Домашняя (~/guest)</span>
+      </div>
+      <div class="exp-side-link" data-target="/home/lohrrrr">
+        <span class="exp-side-icon">👤</span>
+        <span>lohrrrr</span>
+      </div>
+      <div class="exp-side-link" data-target="/filesystem/Apps">
+        <span class="exp-side-icon">📦</span>
+        <span>Приложения (Apps)</span>
+      </div>
+      <div class="exp-side-link" data-target="/filesystem/bin">
+        <span class="exp-side-icon">⚙️</span>
+        <span>Бинарники (/bin)</span>
+      </div>
+      <div class="exp-side-link" data-target="/">
+        <span class="exp-side-icon">💾</span>
+        <span>Корень (/)</span>
+      </div>
+    </div>
+
+    <div class="exp-content">
+      <div class="exp-grid" id="exp-grid"></div>
+    </div>
+  </div>
+
+  <div class="exp-statusbar">
+    <span id="exp-status-count">0 объектов</span>
+    <span id="exp-status-perm">Права: Чтение</span>
+  </div>
+
+  <div class="exp-viewer" id="exp-viewer" style="display: none;">
+    <div class="exp-viewer-head">
+      <span id="exp-viewer-title">view</span>
+      <button id="exp-viewer-close">✕</button>
+    </div>
+    <pre id="exp-viewer-body"></pre>
+  </div>
+</div>

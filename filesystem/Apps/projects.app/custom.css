@@ -1,0 +1,77 @@
+.path-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #171b14;
+    border: 1px solid #3a3424;
+    padding: 3px 6px;
+    margin-bottom: 8px;
+    font-size: 10px;
+    color: #8f8364;
+}
+
+.path-input {
+    background: #0b0e0a;
+    border: 1px inset #2a2517;
+    color: #d8c899;
+    padding: 2px 6px;
+    flex: 1;
+}
+
+.project-entry {
+    background: #0c0f0c;
+    border: 1px solid #363122;
+    box-shadow: inset 1px 1px 0 #1b1e17;
+    padding: 7px 9px;
+    margin-bottom: 8px;
+}
+
+.proj-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.proj-tag {
+    color: #9c833d;
+    font-weight: bold;
+}
+
+.proj-title {
+    color: #f7e4a6;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.proj-title:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.proj-desc {
+    color: #a49c82;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.proj-link a {
+    color: #72a668;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.proj-link a:hover {
+    color: #9eeb91;
+    text-decoration: underline;
+}
+
+.status-strip {
+    font-size: 9px;
+    color: #6a634a;
+    text-align: right;
+    border-top: 1px solid #2d291b;
+    padding-top: 4px;
+}

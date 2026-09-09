@@ -1,0 +1,65 @@
+.section-title {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ba9a44;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.blinkies-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    background: #080a08;
+    border: 1px solid #332d1e;
+    padding: 8px;
+    align-items: center;
+}
+
+.blinkies-cluster a img {
+    display: block;
+    image-rendering: pixelated;
+    border: 1px solid #4a3e1f;
+}
+
+.blinkie-reserved {
+    width: 88px;
+    height: 31px;
+    border: 1px dashed #7a6632;
+    background: #0e110d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+}
+
+.blinkie-reserved span {
+    font-size: 7px;
+    color: #8c7b4e;
+    line-height: 1;
+}
+
+.stamps-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #080a08;
+    border: 1px solid #332d1e;
+    padding: 8px;
+    align-items: center;
+}
+
+.stamp-img {
+    max-height: 55px;
+    object-fit: contain;
+    border: 1px solid #453c23;
+    background: #000;
+    image-rendering: auto;
+    transition: transform 0.1s ease;
+}
+
+.stamp-img:hover {
+    transform: scale(1.08);
+    border-color: #d1b156;
+}

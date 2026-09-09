@@ -1,0 +1,95 @@
+.masterpos-logo-box {
+    text-align: center;
+    padding: 6px 0 10px 0;
+    border-bottom: 1px solid #363223;
+    margin-bottom: 8px;
+}
+
+.masterpos-pyramids {
+    width: 76px;
+    height: 64px;
+    display: block;
+    margin: 0 auto 4px auto;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.4));
+}
+
+.masterpos-title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #ecd792;
+    text-shadow:
+    0 0 2px #fff,
+    1px 1px 0 #735919,
+    2px 2px 0 #45340a,
+    3px 3px 6px #000;
+    margin-bottom: 2px;
+}
+
+.masterpos-sub {
+    font-size: 9px;
+    color: #8c8160;
+    letter-spacing: 2px;
+}
+
+.panel-section {
+    background: #090c09;
+    border: 1px solid #3d3725;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+}
+
+.terminal-kv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 10px;
+}
+
+.terminal-kv span {
+    color: #8f8564;
+}
+
+.terminal-kv strong {
+    color: #e0d09d;
+}
+
+.panel-text {
+    font-size: 11px;
+    color: #a8a086;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.retro-gifs-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    background: #080a08;
+    border: 1px solid #383321;
+    padding: 6px;
+}
+
+.gif-cell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0e120e;
+    border: 1px solid #23271d;
+    padding: 4px;
+}
+
+.gif-cell img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 4px;
+    image-rendering: pixelated;
+}
+
+.gif-cell span {
+    font-size: 8px;
+    color: #857b59;
+}
