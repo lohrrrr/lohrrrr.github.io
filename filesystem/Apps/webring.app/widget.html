@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <base target="_top">
+  <base target="_blank">
   <style>
     * { box-sizing: border-box; }
     body {
@@ -40,5 +40,15 @@
     <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-variables.js"></script>
     <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-widget.js"></script>
   </div>
+
+  <script>
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a');
+      if (a && a.href) {
+        e.preventDefault();
+        window.open(a.href, '_blank');
+      }
+    }, true);
+  </script>
 </body>
 </html>

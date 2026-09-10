@@ -21,7 +21,8 @@
 
 .webring-iframe {
   width: 100%;
-  height: 110px;
+  flex: 1;
+  min-height: 125px;
   border: 1px inset #2d2616;
   background: #060906;
   display: block;
